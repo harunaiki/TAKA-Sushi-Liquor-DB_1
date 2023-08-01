@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine Mosaic</title>
+    <link rel="stylesheet" href="styles_modal_image_size_adjusted.css">
+</head>
+<body>
+
+<div class="filter-container">
+    <select id="categoryFilter">
+        <option value="">--Select Category--</option>
+        <!-- Dynamically populated categories will be here -->
+    </select>
+    <select id="countryFilter">
+        <option value="">--Select Country--</option>
+        <!-- Dynamically populated countries will be here -->
+    </select>
+    
+</div>
+
+<div class="wine-mosaic">
+    <!-- Dynamically populated wine items will be here -->
+</div>
+
+<div id="wineModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2 id="wineName"></h2>
+        <img id="wineImage" src="" alt="Wine Image" width="200">
+        <h3 id="wineBrand"></h3>
+        <p id="wineCountry"></p>
+        <p id="wineOrigin"></p>
+        <p id="wineDescription"></p>
+        <a id="wineInfoLink" href="" target="_blank"></a>
+    </div>
+</div>
+
+<script src="scripts_modal_adjusted_final.js"></script>
+</body>
+</html>

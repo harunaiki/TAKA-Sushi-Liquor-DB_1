@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine Mosaic</title>
+    <link rel="stylesheet" href="updated_styles_v4.css">
+</head>
+<body>
+
+<div class="filter-container">
+<div class="youtube-links">
+    <a href="https://youtu.be/iRf6Tr4hhNs?si=eLvjpskIAF7zhiEE" target="_blank" class="youtube-link">
+        <img src="https://img.youtube.com/vi/iRf6Tr4hhNs/hqdefault.jpg" alt="YouTube Video Thumbnail 1">
+        <div class="youtube-play-icon"></div>
+        <div class="youtube-title">Video Title 1</div>
+    </a>
+    <a href="https://youtu.be/whTaNz27HYU?si=njUSnckIdlqILLTZ" target="_blank" class="youtube-link">
+        <img src="https://img.youtube.com/vi/whTaNz27HYU/hqdefault.jpg" alt="YouTube Video Thumbnail 2">
+        <div class="youtube-play-icon"></div>
+        <div class="youtube-title">Video Title 2</div>
+    </a>
+</div>
+
+    <select id="categoryFilter">
+        <option value="">--Select Category--</option>
+        <!-- Dynamically populated categories will be here -->
+    </select>
+    <select id="countryFilter">
+        <option value="">--Select Country--</option>
+        <!-- Dynamically populated countries will be here -->
+    </select>
+    
+</div>
+
+<div class="wine-mosaic">
+    <!-- Dynamically populated wine items will be here -->
+</div>
+
+<div id="wineModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2 id="wineName"></h2>
+        <img id="wineImage" src="" alt="Wine Image" width="200">
+        <h3 id="wineBrand"></h3>
+        <p id="wineCountry"></p>
+        <p id="wineOrigin"></p>
+        <p id="wineDescription"></p>
+        <a id="wineInfoLink" href="" target="_blank"></a>
+    </div>
+</div>
+
+<script src="scripts_modal_adjusted_final.js"></script>
+</body>
+</html>
